@@ -30,7 +30,8 @@ export default function PageCard({ pageType, focused, onClick, onMenuClick }: Pa
 
     return (
         <div>
-            <div className={`
+            <button className={`
+            ring-inset
             height-[32px]
             flex flex-row justify-center items-center
             ${getTextColor()}
@@ -47,10 +48,11 @@ export default function PageCard({ pageType, focused, onClick, onMenuClick }: Pa
                 {focused &&
                     <div
                         className="ml-1 hover: cursor-pointer"
-                        onClick={onMenuClick}>
+                        onClick={onMenuClick}
+                    >
                         {pageType !== "Add Page" && <EllipsisVertical size={18} color={COLORS.iconGray} />}
                     </div>}
-            </div>
+            </button>
         </div>
     )
 }

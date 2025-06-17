@@ -36,7 +36,7 @@ export default function ContextMenu() {
         ))
     }
     return (
-        <div className="rounded-md w-[240px] border-[0.5px] border-page-border">
+        <div className="rounded-md w-[240px] border-[0.5px] border-page-border animate__animated animate__fadeIn animate__faster">
             <div className="py-3 px-4 bg-gray-100 rounded-t-md text-md">
                 Settings
             </div>

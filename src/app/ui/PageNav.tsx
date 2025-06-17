@@ -43,6 +43,7 @@ export default function PageNav({ pages }: PageNavProps) {
     }, [activePage])
 
     const findNearestBreakpoint = (index: number, x: number) => {
+        console.log("finding breakpoint");
         let closest = index;
         let minDistance = Infinity;
         for (let i = 0; i < numPages; i++) {
@@ -53,7 +54,7 @@ export default function PageNav({ pages }: PageNavProps) {
                 minDistance = dist;
             }
         }
-        if (x - curX <= 0) {
+        if (x - curX < 0) {
             setIsDraggingLeft(true);
             setIsDraggingRight(false);
         } else {
@@ -133,6 +134,10 @@ export default function PageNav({ pages }: PageNavProps) {
             </div>
         ))
     }
+
+    useEffect(() => {
+        console.log(isDraggingLeft)
+    }, [isDraggingLeft])
 
     return (
         <div>
