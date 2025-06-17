@@ -13,8 +13,8 @@
   --color-focus: #1A1A1A;
   --color-unfocus: #677289;
   --color-page-border: #E1E1E1;
-  --color-hover: #9DA4B259;
-  --color-unfocus-bg: #9DA4B226;
+  --color-hover: #d4d4d8;
+  --color-unfocus-bg: #f4f4f5;
 }
 
 @media (prefers-color-scheme: dark) {
